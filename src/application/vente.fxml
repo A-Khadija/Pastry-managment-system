@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="600.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.vente">
+   <children>
+      <Pane layoutX="14.0" layoutY="23.0" prefHeight="443.0" prefWidth="274.0" style="-fx-background-color: #e9f5f9; -fx-background-radius: 30px;" />
+      <Button layoutX="40.0" layoutY="37.0" mnemonicParsing="false" prefHeight="118.0" prefWidth="121.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="106.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Documents/images/image.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="40.0" layoutY="202.0" text="title" />
+      <TextField fx:id="txtname" layoutX="38.0" layoutY="232.0" prefHeight="26.0" prefWidth="227.0" promptText="name" style="-fx-background-radius: 30px;" />
+      <Label layoutX="40.0" layoutY="155.0" text="import pastry's cake here!">
+         <font>
+            <Font name="Bodoni MT" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="39.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <TextArea fx:id="txtdesc" layoutX="38.0" layoutY="302.0" prefHeight="138.0" prefWidth="227.0" promptText="short description" style="-fx-background-radius: 30px;" />
+      <Separator layoutX="297.0" layoutY="24.0" orientation="VERTICAL" prefHeight="443.0" prefWidth="2.0" />
+      <Pane layoutX="315.0" layoutY="23.0" prefHeight="46.0" prefWidth="274.0" style="-fx-background-radius: 30px; -fx-background-color: #e9f5f9;">
+         <children>
+            <Label layoutX="24.0" layoutY="15.0" text="Add a new pastry !">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="315.0" layoutY="86.0" prefHeight="386.0" prefWidth="274.0" style="-fx-background-color: #e9f5f9; -fx-background-radius: 30px;">
+         <children>
+            <Label layoutX="22.0" layoutY="14.0" text="Price" />
+            <TextField fx:id="txtprice" layoutX="24.0" layoutY="37.0" prefHeight="26.0" prefWidth="227.0" promptText="0,00$" style="-fx-background-radius: 30px;" />
+            <ComboBox fx:id="combocat" layoutX="24.0" layoutY="92.0" prefHeight="25.0" prefWidth="227.0" promptText="Categories" style="-fx-background-radius: 30px; -fx-background-color: #3ba1c5;" />
+            <Label layoutX="27.0" layoutY="149.0" text="Pieces" />
+            <TextField fx:id="txtpc" layoutX="24.0" layoutY="180.0" prefHeight="26.0" prefWidth="227.0" promptText="number of pieces we have!" style="-fx-background-radius: 30px;" />
+            <Label layoutX="31.0" layoutY="223.0" text="Status" />
+            <Button layoutX="192.0" layoutY="302.0" mnemonicParsing="false" onAction="#ajouterVente" prefHeight="25.0" prefWidth="60.0" style="-fx-background-radius: 30px; -fx-background-color: #3ba1c5;" text="Save" textFill="#f2f2f2">
+               <font>
+                  <Font name="Forte" size="11.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="available" layoutX="26.0" layoutY="267.0" mnemonicParsing="false" text="available" />
+            <RadioButton fx:id="nonavailable" layoutX="159.0" layoutY="267.0" mnemonicParsing="false" text="non available" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

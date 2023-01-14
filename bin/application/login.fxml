@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1071.0" style="-fx-background-color: wh&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.Cursor?&gt;&lt;?import javafx.scene.control.Button?&gt;&lt;?import javafx.scene.text.Font?&gt;&lt;Button layoutX=&quot;45.0&quot; layoutY=&quot;330.0&quot; mnemonicParsing=&quot;false&quot; onAction=&quot;#connecte&quot; prefHeight=&quot;35.0&quot; prefWidth=&quot;244.0&quot; style=&quot;-fx-background-radius: 30; -fx-background-color: #ac652f;&quot; text=&quot;Connecter&quot; textAlignment=&quot;CENTER&quot; textFill=&quot;#fbfbff&quot; xmlns=&quot;http://javafx.com/javafx/19&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;font&gt;      &lt;Font name=&quot;System Bold&quot; size=&quot;12.0&quot; /&gt;   &lt;/font&gt;   &lt;cursor&gt;      &lt;Cursor fx:constant=&quot;HAND&quot;ite;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.logControl">
+   <children>
+      <ImageView fitHeight="716.0" fitWidth="735.0" layoutX="336.0" layoutY="2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Downloads/pexels-lisa-fotios-1995010.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-2.0" layoutY="-1.0" prefHeight="716.0" prefWidth="340.0" style="-fx-background-color: #fdf9ef;">
+         <children>
+            <Label layoutX="75.0" layoutY="159.0" prefHeight="91.0" prefWidth="214.0" text="Login" textFill="#ac4219">
+               <font>
+                  <Font name="Garamond Bold" size="73.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="250.0" prefHeight="18.0" prefWidth="153.0" text="PastryManagmentSystem">
+               <font>
+                  <Font name="Bell MT Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+            </Label>
+            <Button fx:id="cancel" layoutX="45.0" layoutY="516.0" mnemonicParsing="false" onAction="#cancel" prefHeight="35.0" prefWidth="244.0" style="-fx-background-radius: 30; -fx-background-color: #b38f6b;" text="Cancel" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSignin" layoutX="45.0" layoutY="470.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="244.0" style="-fx-background-radius: 30; -fx-background-color: #ac652f;" text="Connecter" textAlignment="CENTER" textFill="#fbfbff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="19.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Documents/images/man(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="22.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Documents/images/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="close" fitHeight="17.0" fitWidth="17.0" layoutX="293.0" layoutY="385.0" onMouseClicked="#closeedeyes" onMousePressed="#showpassword" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Documents/images/eye(1).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <PasswordField fx:id="password" layoutX="63.0" layoutY="381.0" onKeyReleased="#hidepassword" prefHeight="25.0" prefWidth="220.0" promptText="Password" />
+            <TextField fx:id="username" layoutX="63.0" layoutY="346.0" prefHeight="25.0" prefWidth="220.0" promptText="Username" style="-fx-background-color: white;" />
+            <TextField fx:id="txtpassword" layoutX="63.0" layoutY="381.0" onKeyReleased="#showpassword" prefHeight="18.0" prefWidth="220.0" style="-fx-background-color: white;" />
+            <ImageView fx:id="open" fitHeight="17.0" fitWidth="17.0" layoutX="293.0" layoutY="385.0" onMouseClicked="#openeyes" onMousePressed="#showpassword" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Documents/images/view.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <Lighting diffuseConstant="1.86" light="$null" specularConstant="0.0" specularExponent="32.84" surfaceScale="0.0">
+               <bumpInput>
+                  <Glow level="0.82" />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
